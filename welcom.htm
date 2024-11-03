@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby Shop</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+  <nav class="nav-container">
+    <div class="nav-content">
+      <div class="logo"><h4>Mama & Baby Comfy Corner</h4></div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="welcom.htm">Home</a></li>
+        <li><a href="collection.htm">Collection</a></li>
+        <li><a href="index.htm">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+<div class="wlcm">
+<h2>Welcome to Our Website</h2><hr>
+<h4>Welcome to our fine Baby shop's exclusive collection,</h4><h4> where every piece is handpicked with love and care for your little ones.</h4><hr>
+<a
+href="https://wa.me/+250787587996"
+class="whatsapp-button"
+target="_blank">
+ <button>Contact Us</button> 
+ <div class="icons">
+ <a href="https://www.instagram.com/mamaandbabycomfycorner/profilecard/?igsh=MTUxN3kz0Wh5eTZoeg=="><i class="fa-brands fa-instagram"></i>
+</a>
+ <a href="https://wa.me/+250787587996">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+   <a href="https://www.tiktok.com/@babyshop250rw?_t=8qjM6pSzg5m&_r=1">
+<i class="fa-brands fa-tiktok"></i>
+</a>
+ </div>
+ 
+ <p> Designed by Kiyingi Edrine<br>
+kiyinjieddrin@gmail.com</p>
+ </div>
+ <footer>
+  <p>&copy; <span id="year"></span> Mama & Baby Comfy Corner. All rights reserved.</p>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</footer>
+  </body>
+  </html>
